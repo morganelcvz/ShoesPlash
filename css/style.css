@@ -1,3 +1,7 @@
+@media (max-width:640) {
+    
+}
+
 body {
     margin:0px;
     padding:0px;
@@ -28,7 +32,7 @@ header {
 nav {
     width:100%;
     text-align:center;
-    order:2;
+    padding:20px;
 }
 
 nav a {
@@ -41,22 +45,18 @@ nav a {
 }
 
 header .container {
-    padding:40px;
-    display: flex;
+    width:100%;
 } 
 
 header .container img {
-    order:1;
     position:relative;
     float:left;
 }
 
 #cart {
     float:right;
-    order:3;
     display:flex;
-    padding:10px;
-    width:20rem;
+
 }
 
 .left {
@@ -267,13 +267,24 @@ footer {
     width:100%;
     display: flex;
     justify-content:space-around;
+    padding-bottom:2rem;
 }
 
 #bottombar article {
     text-align:center;
+    font-family: playfair display;
+}
+
+#bottombar h2 {
+    text-align:center;
+    margin-left:2.8rem;
 }
 
 #bottombar ul {
     list-style-type: none;
+}
+
+#bottombar li {
+    margin-top:10px;
 
 }
