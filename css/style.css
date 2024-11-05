@@ -1,0 +1,78 @@
+body {
+    margin:0px;
+    padding:0px;
+    background:#dedede;
+}
+
+/**********HEADER**********/ 
+
+header {
+    background:#f6d4f5;
+}
+
+.topbar {
+    background:#000;
+    text-align:center;
+    padding:10px;
+
+}
+
+.topbar small {
+    font-family:playfair display;
+    font-size:1rem;
+    color:#f6d4f5;
+}
+
+/*****NAVIGATION******/
+
+nav {
+    width:100%;
+    text-align:center;
+    order:3;
+}
+
+nav a {
+    text-decoration:none;
+    color:#000;
+    font-family:Courgette; 
+    font-size:1.3rem;
+    text-transform:uppercase;
+    margin:50px;
+}
+
+header .container {
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+} 
+
+header .container img {
+    order:1;
+    position:relative;
+    float:left;
+}
+
+#cart {
+    order:2;
+    float:right;
+    position:relative;
+    left:80%;
+    top:-10rem;
+}
+
+#cart p {
+    font-size:1.2rem;
+    color:#000;
+}
+
+#cart span {
+    font-size:1.2rem;
+    color:#000;
+    font-family:courgette;
+    font-weight:bold;
+}
+
+#cart i {
+    color:#e3ade1;
+    font-size:2rem;
+}
