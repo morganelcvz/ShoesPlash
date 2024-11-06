@@ -35,8 +35,7 @@ header .container {
 header .container img {
     padding:0px;
     position:relative;
-    left:-16rem;
-
+    left:-15rem;
 }
 
 #cart {
@@ -76,6 +75,10 @@ nav {
     padding:15px;
     text-align:center;
     position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -83,7 +86,6 @@ nav a {
     font-size:1.4rem;
     text-decoration:none;
     color:#000;
-    margin-left:80px;
     text-transform:uppercase;
     padding:15px;
     line-height:2.5rem;
@@ -197,12 +199,17 @@ main.container {
     margin-bottom:6rem;
 }
 
-#new {
-    background:white;
-    padding:20px;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
-    margin:10px 0px;
+
+#new, #best, #crush {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
 }
+
 
 #new h2 {
     font-family:playfair display;
@@ -229,26 +236,12 @@ main.container {
     width:400px;
 }
 
-#best {
-    background:white;
-    padding:20px;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
-    margin:10px 0px;
-}
-
 #best h2 {
     font-family:playfair display;
     font-size:1.5rem;
     color:#fff;
     background:#91bc49;
     padding:15px;
-}
-
-#crush {
-    background:white;
-    padding:20px;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
-    margin:10px 0px;
 }
 
 #crush h2 {
@@ -353,6 +346,10 @@ footer {
         line-height:2.5rem;
     }
 
+    #cart {
+        display:none;
+    }
+
     /********SECTION 1********/
 
     
@@ -403,6 +400,16 @@ footer {
         margin-top:6rem;
         margin-bottom:6rem;
     }
+
+    #new {
+        background:white;
+        padding:20px;
+        box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+        margin:10px 0px;
+        display:flex;
+        flex-direction: column;
+    }
+    
 
     /*******FOOTER*******/ 
 
